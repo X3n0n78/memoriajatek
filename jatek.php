@@ -1,5 +1,7 @@
+<?php
 const kepek = ['kep1.jpg', 'kep2.jpg', 'kep3.jpg', 'kep4.jpg'];
 const jatekTer = document.getElementById('jatek-ter');
+include 'dbconfig.php';
 
 // Keverés és rács generálás
 kepek.concat(kepek).sort(() => Math.random() - 0.5).forEach(kep => {
@@ -9,3 +11,4 @@ kepek.concat(kepek).sort(() => Math.random() - 0.5).forEach(kep => {
     kartya.addEventListener('click', kartyaKattintas);
     jatekTer.appendChild(kartya);
 });
+?>
