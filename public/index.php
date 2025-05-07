@@ -1,7 +1,12 @@
 <?php
-include 'dbconfig.php';
+
+include_once __DIR__ . '/../config/dbconfig.php';
+include_once __DIR__ . '/../config/config.php';
+include_once __DIR__ . '/../src/header.php';
+
+
 session_start();
-include 'config.php';
+
 
 $oldal = $_GET['oldal'] ?? 'kezdolap';
 

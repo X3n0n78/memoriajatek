@@ -1,5 +1,6 @@
 <?php
-include 'dbconfig.php';
+include_once __DIR__ . '/../config/dbconfig.php';
+
 ?>
 
 <form action="feltolt.php" method="post" enctype="multipart/form-data">

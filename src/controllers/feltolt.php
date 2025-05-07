@@ -1,4 +1,6 @@
 <?php
+include_once __DIR__ . '/../config/dbconfig.php';
+
 if ($_FILES['kep']['size'] > 2_000_000) {
     die("Túl nagy fájl!");
 }
